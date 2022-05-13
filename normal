@@ -1,0 +1,57 @@
+var path,boy, leftBoundary,rightBoundary;
+var pathImg,boyImg;
+var i;
+
+function preload(){
+pathImg = loadImage("path.png");
+boyImg = loadAnimation("Runner-1.png","Runner-2.png");
+}
+
+function setup(){
+ createCanvas(400,400);
+
+// Movendo o fundo 
+path=createSprite (200,200);
+path.addImage(pathImg);  
+path.velocityY = 4;
+path.scale=1.2;
+
+//Criando menino que corre 
+function preload(){
+  boyimg = loadAnimation("Runner-1.png","Runner-2.png");
+  boy_collided = loadImage("boy_collided.png");
+  
+  
+}   
+// Criando Boundary (Limite) esquerdo  
+leftBoundary=createSprite(1,0,100,800);
+leftBoundary.visible = false;
+
+//Crie Boundary direito 
+rightBoundary=createSprite(1,0,100,800);
+rightBoundary.visible = false;
+}
+
+
+function draw() {
+background(0);
+path.velocityY = 4;
+
+// Menino se movendo no eixo X com o mouse
+
+
+
+
+
+ //Reiniciar o fundo
+ 
+
+
+
+ drawSprites();
+ boy.x = World.mouseX;
+ boy=createSprite(10,10,380,250);
+ path.depth = boy.depth
+ boy.depth = boy.depth+1
+ boy.scale=1.2;
+ }
